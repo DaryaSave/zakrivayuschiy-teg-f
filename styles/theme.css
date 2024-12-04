@@ -1,3 +1,24 @@
+:root.theme-dark {
+	--font-main: 'Inter-Variable', serif;
+	--font-additional: 'PressStart2P';
+	--title-font-weight: 700;
+	--content-font-weight: 400;
+	--content-color: #00CC14;
+	--background-color: #000000;
+	--background-image: repeating-linear-gradient(
+        90deg,
+        #000 0 2px,
+        rgba(0, 0, 0, 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+    linear-gradient(#007f0c, #004306);   
+	--button-text-color: #00CC14;
+	--heart-contour-color: #00CC14;
+	--heart-fill-color: #00CC14;
+	--heart-sparks-color: #ff0000;
+	--floppy-fill-color:  #00CC14;
+}
+
 :root.theme-light {
 	--font-main: 'Inter-Variable', serif;
 	--font-additional: 'PressStart2P';
