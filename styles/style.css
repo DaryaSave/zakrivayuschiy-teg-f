@@ -222,7 +222,7 @@
 	overflow: hidden;
 	font-family: var(--font-additional), sans-serif;
 	font-size: 14px;
-	transition: inline-size 0.5s ease-in-out, box-shadow 0.3s ease; 
+	transition: inline-size 0.5s ease-in-out, box-shadow 0.3s ease;
 	cursor: pointer;
 }
 
