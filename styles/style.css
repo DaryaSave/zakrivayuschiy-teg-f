@@ -3,7 +3,7 @@
   min-block-size: 100dvb;
 	padding: 100px 0 0 0;
 	color: var(--content-color);
-	font-family: var(--font-main), serif;
+	font-family: var(--font-main), sans-serif;
 	background-color: var(--background-color);
 	background-image: var(--background-image);
 	background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 	margin-block-end: 100px;
 	border: 2px solid var(--content-color);
 	padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 25px 0;
-	font-family: var(--font-additional), serif;
+	font-family: var(--font-additional), sans-serif;
 	text-align: center;
 	background-color: var(--background-color);
 }
@@ -61,11 +61,11 @@
 /*стилизация кнопок смены темы*/
 .theme-menu__button {
   background: none;
-	position: relative;
-	border: none;
-	font-size: 14px;
-	text-transform: uppercase;
-	transition: opacity 0.3s ease;
+  position: relative;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
 .theme-menu__button:hover {
@@ -90,7 +90,6 @@
 	content: '';
 	position: absolute;
 	background-color: currentColor;
-	transition: transform 0.5s ease;
 	transform: scaleX(0);
 	transform-origin: left;
 	inset-block-end: -3px;
@@ -143,7 +142,7 @@
 	z-index: 100;
 	opacity: 0.5;
 	color: var(--content-color);
-	font-family: var(--font-additional), serif;
+	font-family: var(--font-additional), sans-serif;
 	font-size: 14px;
 	text-shadow: 0 0 1px var(--content-color);
 	inset-block-start: 25px;
@@ -209,7 +208,6 @@
 
 .card__icon-button:focus-visible {
 	border-color: var(--content-color);
-	transition: 0.3s ease;
 }
 
 .card__like-button {
@@ -222,9 +220,9 @@
 	position: relative;
 	border: 2px solid var(--content-color);
 	overflow: hidden;
-	font-family: var(--font-additional);
+	font-family: var(--font-additional), sans-serif;
 	font-size: 14px;
-	transition: inline-size 0.5s ease-in-out;
+	transition: inline-size 0.5s ease-in-out, box-shadow 0.3s ease; 
 	cursor: pointer;
 }
 
@@ -284,6 +282,8 @@
 	z-index: 1000;
 	color: var(--floppy-fill-color);
 	mix-blend-mode: difference;
+	width: 21px;
+	height: 21px;
 }
 
 @supports (mix-blend-mode: difference) {
@@ -301,7 +301,7 @@
 .dialog {
 	border: 2px solid var(--content-color);
 	padding: 28px;
-	font-family: var(--font-additional);
+	font-family: var(--font-additional), sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	background-color: var(--background-color);
@@ -319,6 +319,8 @@
 .dialog-floppy {
 	color: var(--floppy-fill-color);
 	mix-blend-mode: difference;
+	inline-size: 21px;
+    block-size: 21px;
 }
 
 .dialog__text {
@@ -382,7 +384,12 @@
 	}
 
 	.save-button__icon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.dialog-floppy {
 		inline-size: 28px;
 		block-size: 28px;
-	}
+}
 }
